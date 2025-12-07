@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>生日快乐！</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- 引入Google字体 -->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 动态背景容器 -->
+    <div id="background-container">
+        <!-- 这里将由JavaScript生成动态元素 -->
+    </div>
+    
+    <!-- 主内容容器 -->
+    <div id="main-container">
+        <!-- 标题区域 -->
+        <h1 id="birthday-title">生日快乐！</h1>
+        
+        <!-- 祝福语区域 -->
+        <div id="wish-message">
+            <p>祝周美彤生日快乐！愿你的每一天都充满阳光和欢笑！</p>
+        </div>
+        
+        <!-- 互动元素区域 -->
+        <div id="interactive-area">
+            <button id="make-wish-btn">许下心愿</button>
+            <button id="throw-confetti-btn">撒花庆祝</button>
+        </div>
+        
+        <!-- 蛋糕和蜡烛区域 -->
+        <div id="cake-container">
+            <div id="cake">
+                <!-- 蛋糕主体 -->
+                <div class="cake-layer cake-bottom"></div>
+                <div class="cake-layer cake-middle"></div>
+                <div class="cake-layer cake-top"></div>
+                <!-- 奶油装饰 -->
+                <div class="cream-decoration"></div>
+                <!-- 蜡烛容器 -->
+                <div id="candles-container">
+                    <!-- 蜡烛将由JavaScript动态生成 -->
+                </div>
+            </div>
+        </div>
+        
+        <!-- 礼物盒区域 -->
+        <div id="gifts-container">
+            <!-- 礼物盒将由JavaScript动态生成 -->
+        </div>
+        
+        <!-- 许愿表单 -->
+        <div id="wish-form" class="hidden">
+            <textarea id="wish-input" placeholder="输入你的心愿..."></textarea>
+            <button id="submit-wish-btn">提交心愿</button>
+        </div>
+        
+        <!-- 心愿展示区域 -->
+        <div id="wish-display" class="hidden">
+            <p id="user-wish"></p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
