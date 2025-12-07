@@ -32,8 +32,8 @@ jobs:
       - name: HTML Preview
         uses: pavi2410/html-preview-action@v4
         with:
-            html_file: # default is index.html
-                   job_summary: # optional, default is true
+            html_file: index.html
+
           
       - name: Checkout
         uses: actions/checkout@v4
